@@ -11,9 +11,7 @@ app.config['MYSQL_DB'] = 'dbcrud'
 
 mysql = MySQL(app)
 
-# =========================
 # HTML WEB
-# =========================
 
 @app.route('/')
 def home():
