@@ -1,0 +1,182 @@
+{
+	"id": "97a8f923-1b80-4952-952c-16653dc578a9",
+	"name": "Automatizacion CRUD",
+	"timestamp": "2026-05-09T05:42:12.195Z",
+	"collection_id": "54549321-f09a4197-3537-410f-992f-13d4e4665b7b",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-05-09T05:42:10.313Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c66513a5-721f-4861-bc74-63639fb2017d",
+			"name": "POST",
+			"url": "http://127.0.0.1:5000/api/users",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Usuario creado correctamente": true,
+				"Respuesta contiene mensaje": true
+			},
+			"testPassFailCounts": {
+				"Usuario creado correctamente": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Respuesta contiene mensaje": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Usuario creado correctamente": true,
+					"Respuesta contiene mensaje": true
+				}
+			]
+		},
+		{
+			"id": "b0131d2e-5ee4-47b7-ba65-535ac0a136b1",
+			"name": "GET",
+			"url": "http://127.0.0.1:5000/api/users",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code es 200": true,
+				"La respuesta es JSON": true,
+				"La respuesta contiene usuarios": true,
+				"Existe el campo name": true
+			},
+			"testPassFailCounts": {
+				"Status code es 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta es JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene usuarios": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Existe el campo name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code es 200": true,
+					"La respuesta es JSON": true,
+					"La respuesta contiene usuarios": true,
+					"Existe el campo name": true
+				}
+			]
+		},
+		{
+			"id": "4c30acb0-5a29-4a59-a4af-6730c73ad338",
+			"name": "PUT",
+			"url": "http://127.0.0.1:5000/api/users/1",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Usuario actualizado": true,
+				"Mensaje correcto": true
+			},
+			"testPassFailCounts": {
+				"Usuario actualizado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mensaje correcto": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Usuario actualizado": true,
+					"Mensaje correcto": true
+				}
+			]
+		},
+		{
+			"id": "81a9a170-a184-4230-86bc-6a18975e62d7",
+			"name": "DELETE",
+			"url": "http://127.0.0.1:5000/api/users/1",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Usuario eliminado": true,
+				"Mensaje correcto": true
+			},
+			"testPassFailCounts": {
+				"Usuario eliminado": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Mensaje correcto": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Usuario eliminado": true,
+					"Mensaje correcto": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 51,
+	"collection": {
+		"requests": [
+			{
+				"id": "c66513a5-721f-4861-bc74-63639fb2017d",
+				"method": "POST"
+			},
+			{
+				"id": "b0131d2e-5ee4-47b7-ba65-535ac0a136b1",
+				"method": "GET"
+			},
+			{
+				"id": "4c30acb0-5a29-4a59-a4af-6730c73ad338",
+				"method": "PUT"
+			},
+			{
+				"id": "81a9a170-a184-4230-86bc-6a18975e62d7",
+				"method": "DELETE"
+			}
+		]
+	}
+}
